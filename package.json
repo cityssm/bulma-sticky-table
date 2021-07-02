@@ -1,8 +1,8 @@
 {
-  "name": "bulma-sticky-table",
+  "name": "@cityssm/bulma-sticky-table",
   "version": "1.0.0",
-  "description": "A Bulma-friendly way to stick a table header.",
-  "main": "index.js",
+  "description": "A Bulma-friendly way to stick a table header, first column, or both!",
+  "main": "_sticky-table.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
