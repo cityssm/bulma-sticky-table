@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html style="overflow-x:auto">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bulma-sticky-table</title>
+    <link rel="stylesheet" href="bulma-with-sticky-table.min.css">
+  </head>
+  <body>
+  <section class="section has-background-info-light">
+    <div class="container">
+      <h1 class="title">
+        bulma-sticky-table
+      </h1>
+      <p class="subtitle">
+        A Bulma-friendly way to stick a table header.
+      </p>
+      <a class="button is-link" href="https://github.com/cityssm/bulma-sticky-table">
+        Grab the SCSS from GitHub
+      </a>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <h2 class="title">
+        Example Table with all Bulma Options and a Sticky Header and First Column
+      </h2>
+      <div class="message is-warning">
+        <p class="message-body">
+          Depending on the size of your screen, you may have to resize your browser window.
+        </p>
+      </div>
+      <div class="box">
+        <code class="is-block" style="background-color:transparent">
+          &lt;table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth <strong>has-sticky-header has-sticky-column</strong>"&gt;<br />
+          &lt;thead&gt;<br />
+          &lt;tr&gt;<br />
+          &nbsp;&nbsp;&lt;th&gt; Header cells must all be th &lt;/th&gt;<br />
+          &nbsp;&nbsp;&lt;th&gt; ... &lt;/th&gt;<br />
+          &nbsp;&nbsp;...<br />
+          &nbsp;&nbsp;&lt;th&gt; ... &lt;/th&gt;<br />
+          &lt;/tr&gt;<br />
+          &lt;/thead><br />
+          &lt;tbody&gt;<br />
+          &lt;tr&gt;<br />
+          &nbsp;&nbsp;&lt;th&gt; First column must be a th &lt;/th&gt;<br />
+          &nbsp;&nbsp;&lt;td&gt; ... &lt;/td&gt;<br />
+          &nbsp;&nbsp;...<br />
+          &nbsp;&nbsp;&lt;td&gt; ... &lt;/td&gt;<br />
+          &lt;/tr&gt;<br />
+          &lt;/tbody><br />
+          &lt;/table&gt;
+        </code>
+      </div>
+      <div class="buttons">
+        <button class="button is-info is-toggle-header-button" data-table="4" type="button">Toggle .has-sticky-header</button>
+        <button class="button is-info is-toggle-column-button" data-table="4" type="button">Toggle .has-sticky-column</button>
+      </div>
+      <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth has-sticky-header has-sticky-column" id="table--4">
+        <thead>
+          <tr>
+            <th>Letter</th>
+            <th>Score</th>
+            <th>Count</th>
+            <th>Total</th>
+            <th>Score</th>
+            <th>Count</th>
+            <th>Total</th>
+            <th>Score</th>
+            <th>Count</th>
+            <th>Total</th>
+            <th>Score</th>
+            <th>Count</th>
+            <th>Total</th>
+            <th>Score</th>
+            <th>Count</th>
+            <th>Total</th>
+            <th>Score</th>
+            <th>Count</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>A</th>
+            <td>1</td><td>1</td><td>1</td>
+            <td>1</td><td>1</td><td>1</td>
+            <td>1</td><td>1</td><td>1</td>
+            <td>1</td><td>1</td><td>1</td>
+            <td>1</td><td>1</td><td>1</td>
+            <td>1</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>B</th>
+            <td>2</td><td>1</td><td>1</td>
+            <td>2</td><td>1</td><td>1</td>
+            <td>2</td><td>1</td><td>1</td>
+            <td>2</td><td>1</td><td>1</td>
+            <td>2</td><td>1</td><td>1</td>
+            <td>2</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>C</th>
+            <td>3</td><td>1</td><td>1</td>
+            <td>3</td><td>1</td><td>1</td>
+            <td>3</td><td>1</td><td>1</td>
+            <td>3</td><td>1</td><td>1</td>
+            <td>3</td><td>1</td><td>1</td>
+            <td>3</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>D</th>
+            <td>4</td><td>1</td><td>1</td>
+            <td>4</td><td>1</td><td>1</td>
+            <td>4</td><td>1</td><td>1</td>
+            <td>4</td><td>1</td><td>1</td>
+            <td>4</td><td>1</td><td>1</td>
+            <td>4</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>E</th>
+            <td>5</td><td>1</td><td>1</td>
+            <td>5</td><td>1</td><td>1</td>
+            <td>5</td><td>1</td><td>1</td>
+            <td>5</td><td>1</td><td>1</td>
+            <td>5</td><td>1</td><td>1</td>
+            <td>5</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>F</th>
+            <td>6</td><td>1</td><td>1</td>
+            <td>6</td><td>1</td><td>1</td>
+            <td>6</td><td>1</td><td>1</td>
+            <td>6</td><td>1</td><td>1</td>
+            <td>6</td><td>1</td><td>1</td>
+            <td>6</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>G</th>
+            <td>7</td><td>1</td><td>1</td>
+            <td>7</td><td>1</td><td>1</td>
+            <td>7</td><td>1</td><td>1</td>
+            <td>7</td><td>1</td><td>1</td>
+            <td>7</td><td>1</td><td>1</td>
+            <td>7</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>H</th>
+            <td>8</td><td>1</td><td>1</td>
+            <td>8</td><td>1</td><td>1</td>
+            <td>8</td><td>1</td><td>1</td>
+            <td>8</td><td>1</td><td>1</td>
+            <td>8</td><td>1</td><td>1</td>
+            <td>8</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>I</th>
+            <td>9</td><td>1</td><td>1</td>
+            <td>9</td><td>1</td><td>1</td>
+            <td>9</td><td>1</td><td>1</td>
+            <td>9</td><td>1</td><td>1</td>
+            <td>9</td><td>1</td><td>1</td>
+            <td>9</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>J</th>
+            <td>10</td><td>1</td><td>1</td>
+            <td>10</td><td>1</td><td>1</td>
+            <td>10</td><td>1</td><td>1</td>
+            <td>10</td><td>1</td><td>1</td>
+            <td>10</td><td>1</td><td>1</td>
+            <td>10</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>K</th>
+            <td>11</td><td>1</td><td>1</td>
+            <td>11</td><td>1</td><td>1</td>
+            <td>11</td><td>1</td><td>1</td>
+            <td>11</td><td>1</td><td>1</td>
+            <td>11</td><td>1</td><td>1</td>
+            <td>11</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>L</th>
+            <td>12</td><td>1</td><td>1</td>
+            <td>12</td><td>1</td><td>1</td>
+            <td>12</td><td>1</td><td>1</td>
+            <td>12</td><td>1</td><td>1</td>
+            <td>12</td><td>1</td><td>1</td>
+            <td>12</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>M</th>
+            <td>13</td><td>1</td><td>1</td>
+            <td>13</td><td>1</td><td>1</td>
+            <td>13</td><td>1</td><td>1</td>
+            <td>13</td><td>1</td><td>1</td>
+            <td>13</td><td>1</td><td>1</td>
+            <td>13</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>N</th>
+            <td>14</td><td>1</td><td>1</td>
+            <td>14</td><td>1</td><td>1</td>
+            <td>14</td><td>1</td><td>1</td>
+            <td>14</td><td>1</td><td>1</td>
+            <td>14</td><td>1</td><td>1</td>
+            <td>14</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>O</th>
+            <td>15</td><td>1</td><td>1</td>
+            <td>15</td><td>1</td><td>1</td>
+            <td>15</td><td>1</td><td>1</td>
+            <td>15</td><td>1</td><td>1</td>
+            <td>15</td><td>1</td><td>1</td>
+            <td>15</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>P</th>
+            <td>16</td><td>1</td><td>1</td>
+            <td>16</td><td>1</td><td>1</td>
+            <td>16</td><td>1</td><td>1</td>
+            <td>16</td><td>1</td><td>1</td>
+            <td>16</td><td>1</td><td>1</td>
+            <td>16</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>Q</th>
+            <td>17</td><td>1</td><td>1</td>
+            <td>17</td><td>1</td><td>1</td>
+            <td>17</td><td>1</td><td>1</td>
+            <td>17</td><td>1</td><td>1</td>
+            <td>17</td><td>1</td><td>1</td>
+            <td>17</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>R</th>
+            <td>18</td><td>1</td><td>1</td>
+            <td>18</td><td>1</td><td>1</td>
+            <td>18</td><td>1</td><td>1</td>
+            <td>18</td><td>1</td><td>1</td>
+            <td>18</td><td>1</td><td>1</td>
+            <td>18</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>S</th>
+            <td>19</td><td>1</td><td>1</td>
+            <td>19</td><td>1</td><td>1</td>
+            <td>19</td><td>1</td><td>1</td>
+            <td>19</td><td>1</td><td>1</td>
+            <td>19</td><td>1</td><td>1</td>
+            <td>19</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>T</th>
+            <td>20</td><td>1</td><td>1</td>
+            <td>20</td><td>1</td><td>1</td>
+            <td>20</td><td>1</td><td>1</td>
+            <td>20</td><td>1</td><td>1</td>
+            <td>20</td><td>1</td><td>1</td>
+            <td>20</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>U</th>
+            <td>21</td><td>1</td><td>1</td>
+            <td>21</td><td>1</td><td>1</td>
+            <td>21</td><td>1</td><td>1</td>
+            <td>21</td><td>1</td><td>1</td>
+            <td>21</td><td>1</td><td>1</td>
+            <td>21</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>V</th>
+            <td>22</td><td>1</td><td>1</td>
+            <td>22</td><td>1</td><td>1</td>
+            <td>22</td><td>1</td><td>1</td>
+            <td>22</td><td>1</td><td>1</td>
+            <td>22</td><td>1</td><td>1</td>
+            <td>22</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>W</th>
+            <td>23</td><td>1</td><td>1</td>
+            <td>23</td><td>1</td><td>1</td>
+            <td>23</td><td>1</td><td>1</td>
+            <td>23</td><td>1</td><td>1</td>
+            <td>23</td><td>1</td><td>1</td>
+            <td>23</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>X</th>
+            <td>24</td><td>1</td><td>1</td>
+            <td>24</td><td>1</td><td>1</td>
+            <td>24</td><td>1</td><td>1</td>
+            <td>24</td><td>1</td><td>1</td>
+            <td>24</td><td>1</td><td>1</td>
+            <td>24</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>Y</th>
+            <td>25</td><td>1</td><td>1</td>
+            <td>25</td><td>1</td><td>1</td>
+            <td>25</td><td>1</td><td>1</td>
+            <td>25</td><td>1</td><td>1</td>
+            <td>25</td><td>1</td><td>1</td>
+            <td>25</td><td>1</td><td>1</td>
+          </tr>
+          <tr>
+            <th>Z</th>
+            <td>26</td><td>1</td><td>1</td>
+            <td>26</td><td>1</td><td>1</td>
+            <td>26</td><td>1</td><td>1</td>
+            <td>26</td><td>1</td><td>1</td>
+            <td>26</td><td>1</td><td>1</td>
+            <td>26</td><td>1</td><td>1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <footer class="section has-background-info-light">
+    <div class="container has-text-right">
+      Another open source project by
+      <a href="https://saultstemarie.ca/">The City of Sault Ste. Marie</a>
+    </div>
+  </footer>
+  <script>
+    const toggleHeaderFn = (clickEvent) => {
+      const tableID = clickEvent.currentTarget.dataset.table;
+      document.getElementById("table--" + tableID).classList.toggle("has-sticky-header");
+      clickEvent.currentTarget.classList.toggle("is-info");
+    };
+
+    const toggleColumnFn = (clickEvent) => {
+      const tableID = clickEvent.currentTarget.dataset.table;
+      document.getElementById("table--" + tableID).classList.toggle("has-sticky-column");
+      clickEvent.currentTarget.classList.toggle("is-info");
+    };
+
+    const toggleHeaderBtns = document.getElementsByClassName("is-toggle-header-button");
+    for (let index = 0; index < toggleHeaderBtns.length; index += 1) {
+      toggleHeaderBtns[index].addEventListener("click", toggleHeaderFn);
+    }
+
+    const toggleColumnBtns = document.getElementsByClassName("is-toggle-column-button");
+    for (let index = 0; index < toggleColumnBtns.length; index += 1) {
+      toggleColumnBtns[index].addEventListener("click", toggleColumnFn);
+    }
+  </script>
+  </body>
+</html>

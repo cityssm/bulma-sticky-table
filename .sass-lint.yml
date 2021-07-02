@@ -1,0 +1,29 @@
+rules:
+  class-name-format:
+    - 0
+  empty-line-between-blocks:
+    - 0
+  final-newline:
+    - 0
+  force-attribute-nesting:
+    - 0
+  force-element-nesting:
+    - 0
+  hex-length:
+    - 0
+  indentation:
+    - 0
+  leading-zero:
+    - 0
+  no-color-literals:
+    - 1
+  no-css-comments:
+    - 0
+  no-ids:
+    - 0
+  no-trailing-whitespace:
+    - 0
+  property-sort-order:
+    - 1
+    -
+      order: 'recess'

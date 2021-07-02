@@ -1,0 +1,9 @@
+.git
+.github
+node_modules
+
+.gitignore
+.npmignore
+.sass-lint.yml
+index.html
+screenshot.png

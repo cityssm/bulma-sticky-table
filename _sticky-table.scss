@@ -1,0 +1,91 @@
+.table.has-sticky-header {
+  thead th {
+    @if $table-head-background-color == 'transparent' or $table-head-background-color == rgba(0, 0, 0, 0) {
+      background-color: $table-background-color;
+    }
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  &.is-bordered {
+    border-collapse: separate;
+
+    th,
+    td {
+      border-bottom-width: 0;
+
+      &:not(:last-child) {
+        border-right-width: 0;
+      }
+
+      tbody tr:first-child & {
+        border-top-width: 0;
+      }
+    }
+  }
+}
+
+.table.has-sticky-column {
+
+  border-collapse: separate;
+
+  th,
+  td {
+    border-bottom-width: 0;
+
+    &:not(:last-child) {
+      border-right-width: 0;
+    }
+
+    tbody tr:first-child & {
+      border-top-width: 0;
+    }
+  }
+
+  thead th:first-child {
+    @if $table-head-background-color == 'transparent' or $table-head-background-color == rgba(0, 0, 0, 0) {
+      background-color: $table-background-color;
+    }
+
+    position: sticky;
+    left: 0;
+    z-index: 2;
+  }
+
+  tbody th:first-child {
+    @if $table-body-background-color == 'transparent' or $table-body-background-color == rgba(0, 0, 0, 0) {
+      background-color: $table-background-color;
+    }
+
+    position: sticky;
+    left: 0;
+    z-index: 1;
+  }
+
+  &.is-bordered {
+    thead th:first-child,
+    tbody th:first-child {
+      border-right: 1px solid $border;
+    }
+  }
+
+  &.is-hoverable {
+    tbody tr:not(.is-selected):hover th:first-child {
+      background-color: $table-row-hover-background-color;
+    }
+  }
+
+  &.is-striped {
+    tbody tr:not(.is-selected):nth-child(even) th:first-child {
+      background-color: $table-striped-row-even-background-color;
+    }
+  }
+
+  &.is-striped.is-hoverable {
+    tbody tr:not(.is-selected):nth-child(even):hover th:first-child {
+      background-color: $table-striped-row-even-hover-background-color;
+    }
+  }
+}
