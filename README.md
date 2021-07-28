@@ -20,7 +20,7 @@ This will ensure your colour customizations are used.
 
 ```scss
 @import 'bulma/bulma';
-@import '@cityssm/sticky-table/sticky-table';
+@import '@cityssm/bulma-sticky-table/sticky-table';
 ```
 
 Alternatively, if you are using Bulma without any customizations,
