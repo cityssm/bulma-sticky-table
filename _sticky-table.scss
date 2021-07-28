@@ -89,3 +89,8 @@
     }
   }
 }
+
+.navbar.is-fixed-top ~ .table.has-sticky-header thead th,
+.navbar.is-fixed-top ~ * .table.has-sticky-header thead th {
+  top: $navbar-height;
+}
