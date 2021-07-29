@@ -23,7 +23,7 @@
   <section class="section">
     <div class="container">
       <h2 class="title">
-        Example Table with all Bulma Options and a Sticky Header and First Column
+        Example Table
       </h2>
       <div class="message is-warning">
         <p class="message-body">
@@ -52,11 +52,20 @@
           &lt;/table&gt;
         </code>
       </div>
-      <div class="buttons">
-        <button class="button is-info is-toggle-header-button" data-table="4" type="button">Toggle .has-sticky-header</button>
-        <button class="button is-info is-toggle-column-button" data-table="4" type="button">Toggle .has-sticky-column</button>
+      <div class="box">
+        <h3 class="title is-4">Table Class Toggles</h3>
+        <div class="buttons">
+          <button class="button is-info toggle-button" data-toggle-class="has-sticky-header" type="button">.has-sticky-header</button>
+          <button class="button is-info toggle-button" data-toggle-class="has-sticky-column" type="button">.has-sticky-column</button>
+        </div>
+        <div class="buttons">
+          <button class="button is-info is-small toggle-button" data-toggle-class="is-bordered" type="button">.is-bordered</button>
+          <button class="button is-info is-small toggle-button" data-toggle-class="is-striped" type="button">.is-striped</button>
+          <button class="button is-info is-small toggle-button" data-toggle-class="is-narrow" type="button">.is-narrow</button>
+          <button class="button is-info is-small toggle-button" data-toggle-class="is-hoverable" type="button">.is-hoverable</button>
+        </div>
       </div>
-      <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth has-sticky-header has-sticky-column" id="table--4">
+      <table class="table is-striped is-bordered is-narrow is-hoverable is-fullwidth has-sticky-header has-sticky-column" id="demo-table">
         <thead>
           <tr>
             <th>Letter</th>
@@ -326,26 +335,15 @@
     </div>
   </footer>
   <script>
-    const toggleHeaderFn = (clickEvent) => {
-      const tableID = clickEvent.currentTarget.dataset.table;
-      document.getElementById("table--" + tableID).classList.toggle("has-sticky-header");
-      clickEvent.currentTarget.classList.toggle("is-info");
+    const toggleClassFn = (clickEvent) => {
+      const buttonElement = clickEvent.currentTarget;
+      document.getElementById("demo-table").classList.toggle(buttonElement.dataset.toggleClass);
+      buttonElement.classList.toggle("is-info");
     };
 
-    const toggleColumnFn = (clickEvent) => {
-      const tableID = clickEvent.currentTarget.dataset.table;
-      document.getElementById("table--" + tableID).classList.toggle("has-sticky-column");
-      clickEvent.currentTarget.classList.toggle("is-info");
-    };
-
-    const toggleHeaderBtns = document.getElementsByClassName("is-toggle-header-button");
-    for (let index = 0; index < toggleHeaderBtns.length; index += 1) {
-      toggleHeaderBtns[index].addEventListener("click", toggleHeaderFn);
-    }
-
-    const toggleColumnBtns = document.getElementsByClassName("is-toggle-column-button");
-    for (let index = 0; index < toggleColumnBtns.length; index += 1) {
-      toggleColumnBtns[index].addEventListener("click", toggleColumnFn);
+    const toggleButtons = document.getElementsByClassName("toggle-button");
+    for (let index = 0; index < toggleButtons.length; index += 1) {
+      toggleButtons[index].addEventListener("click", toggleClassFn);
     }
   </script>
   </body>

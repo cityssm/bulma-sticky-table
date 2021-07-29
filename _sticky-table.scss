@@ -1,3 +1,32 @@
+.table.has-sticky-header,
+.table.has-sticky-column {
+  border-collapse: separate;
+
+  th,
+  td {
+    border-top-width: 0;
+  }
+
+  &.is-bordered {
+
+    border: $table-cell-border;
+
+    th,
+    td {
+      border-left-width: 0;
+
+      &:last-child {
+        border-right-width: 0;
+      }
+    }
+
+    tbody tr:last-child th,
+    tbody tr:last-child td {
+      border-bottom-width: 0;
+    }
+  }
+}
+
 .table.has-sticky-header {
   thead th {
     @if $table-head-background-color == 'transparent' or $table-head-background-color == rgba(0, 0, 0, 0) {
@@ -8,41 +37,9 @@
     top: 0;
     z-index: 1;
   }
-
-  &.is-bordered {
-    border-collapse: separate;
-
-    th,
-    td {
-      border-bottom-width: 0;
-
-      &:not(:last-child) {
-        border-right-width: 0;
-      }
-
-      tbody tr:first-child & {
-        border-top-width: 0;
-      }
-    }
-  }
 }
 
 .table.has-sticky-column {
-
-  border-collapse: separate;
-
-  th,
-  td {
-    border-bottom-width: 0;
-
-    &:not(:last-child) {
-      border-right-width: 0;
-    }
-
-    tbody tr:first-child & {
-      border-top-width: 0;
-    }
-  }
 
   thead th:first-child {
     @if $table-head-background-color == 'transparent' or $table-head-background-color == rgba(0, 0, 0, 0) {
@@ -62,13 +59,6 @@
     position: sticky;
     left: 0;
     z-index: 1;
-  }
-
-  &.is-bordered {
-    thead th:first-child,
-    tbody th:first-child {
-      border-right: 1px solid $border;
-    }
   }
 
   &.is-hoverable {
