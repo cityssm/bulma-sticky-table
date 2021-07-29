@@ -40,7 +40,7 @@
 /*
  * Sticky Header
  */
- 
+
 .table.has-sticky-header {
   thead th {
     @if $table-head-background-color == 'transparent' or $table-head-background-color == rgba(0, 0, 0, 0) {
@@ -63,7 +63,7 @@
 
 .table.has-sticky-footer {
   tfoot th {
-    @if $table-head-background-color == 'transparent' or $table-head-background-color == rgba(0, 0, 0, 0) {
+    @if $table-foot-background-color == 'transparent' or $table-foot-background-color == rgba(0, 0, 0, 0) {
       background-color: $table-background-color;
     }
     position: sticky;
