@@ -1,7 +1,7 @@
 {
   "name": "@cityssm/bulma-sticky-table",
-  "version": "1.2.0",
-  "description": "A Bulma-friendly way to stick a table header, first column, or both!",
+  "version": "1.3.0",
+  "description": "A Bulma-friendly way to stick a table header, table footer, first column, or all three!",
   "main": "_sticky-table.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,12 @@
     "url": "git+https://github.com/cityssm/bulma-sticky-table.git"
   },
   "keywords": [
-    "bulma"
+    "bulma",
+    "sticky",
+    "table",
+    "header",
+    "footer",
+    "column"
   ],
   "author": "The Corporation of the City of Sault Ste. Marie",
   "license": "MIT",

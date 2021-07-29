@@ -5,7 +5,7 @@
 
 ![Screenshot](screenshot.png)
 
-A Bulma-friendly way to stick a table header, first column, or both!
+A Bulma-friendly way to stick a table header, table footer, first column, or all three!
 
 **[See It In Action](https://cityssm.github.io/bulma-sticky-table)**
 
@@ -34,11 +34,15 @@ you can replace your Bulma stylesheet with `bulma-with-sticky-tables.min.css`.
 
 Build your Bulma table as per usual, using the [Bulma Table Documentation](https://bulma.io/documentation/elements/table/) as your guide.
 
-Then, add either or both of the following classes to your `<table>` tag.
+Then, add any combination of the following classes to your `<table>` tag.
 
 Use `.has-sticky-header` to stick the header.
 
 -   Note that the header should be inside of a `<thead>` tag, and each cell should use a `<th>` tag.
+
+Use `.has-sticky-footer` to stick the footer.
+
+-   Note that the footer should be inside of a `<tfoot>` tag, and each cell should use a `<th>` tag.
 
 Use `.has-sticky-column` to stick the first column.
 

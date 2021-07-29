@@ -13,7 +13,7 @@
         bulma-sticky-table
       </h1>
       <p class="subtitle">
-        A Bulma-friendly way to stick a table header, first column, or both!
+        A Bulma-friendly way to stick a table header, table footer, first column, or all three!
       </p>
       <a class="button is-link" href="https://github.com/cityssm/bulma-sticky-table">
         Grab the SCSS from GitHub
@@ -32,7 +32,7 @@
       </div>
       <div class="box">
         <code class="is-block" style="background-color:transparent">
-          &lt;table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth <strong>has-sticky-header has-sticky-column</strong>"&gt;<br />
+          &lt;table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth <strong>has-sticky-header has-sticky-footer has-sticky-column</strong>"&gt;<br />
           &lt;thead&gt;<br />
           &lt;tr&gt;<br />
           &nbsp;&nbsp;&lt;th&gt; Header cells must all be th &lt;/th&gt;<br />
@@ -49,6 +49,14 @@
           &nbsp;&nbsp;&lt;td&gt; ... &lt;/td&gt;<br />
           &lt;/tr&gt;<br />
           &lt;/tbody><br />
+          &lt;tfoot&gt;<br />
+          &lt;tr&gt;<br />
+          &nbsp;&nbsp;&lt;th&gt; Footer cells must all be th &lt;/th&gt;<br />
+          &nbsp;&nbsp;&lt;th&gt; ... &lt;/th&gt;<br />
+          &nbsp;&nbsp;...<br />
+          &nbsp;&nbsp;&lt;th&gt; ... &lt;/th&gt;<br />
+          &lt;/tr&gt;<br />
+          &lt;/tfoot><br />
           &lt;/table&gt;
         </code>
       </div>
@@ -56,6 +64,7 @@
         <h3 class="title is-4">Table Class Toggles</h3>
         <div class="buttons">
           <button class="button is-info toggle-button" data-toggle-class="has-sticky-header" type="button">.has-sticky-header</button>
+          <button class="button is-info toggle-button" data-toggle-class="has-sticky-footer" type="button">.has-sticky-footer</button>
           <button class="button is-info toggle-button" data-toggle-class="has-sticky-column" type="button">.has-sticky-column</button>
         </div>
         <div class="buttons">
@@ -65,7 +74,7 @@
           <button class="button is-info is-small toggle-button" data-toggle-class="is-hoverable" type="button">.is-hoverable</button>
         </div>
       </div>
-      <table class="table is-striped is-bordered is-narrow is-hoverable is-fullwidth has-sticky-header has-sticky-column" id="demo-table">
+      <table class="table is-striped is-bordered is-narrow is-hoverable is-fullwidth has-sticky-header has-sticky-footer has-sticky-column" id="demo-table">
         <thead>
           <tr>
             <th>Letter</th>
@@ -325,6 +334,29 @@
             <td>26</td><td>1</td><td>1</td>
           </tr>
         </tbody>
+        <tfoot>
+          <tr>
+            <th>Letter</th>
+            <th>Score</th>
+            <th>Count</th>
+            <th>Total</th>
+            <th>Score</th>
+            <th>Count</th>
+            <th>Total</th>
+            <th>Score</th>
+            <th>Count</th>
+            <th>Total</th>
+            <th>Score</th>
+            <th>Count</th>
+            <th>Total</th>
+            <th>Score</th>
+            <th>Count</th>
+            <th>Total</th>
+            <th>Score</th>
+            <th>Count</th>
+            <th>Total</th>
+          </tr>
+        </tfoot>
       </table>
     </div>
   </section>

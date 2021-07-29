@@ -1,17 +1,25 @@
-.table.has-sticky-header,
-.table.has-sticky-column {
+/*
+ * Fix borders
+ */
+
+.table.has-sticky-column,
+.table.has-sticky-footer,
+.table.has-sticky-header {
   border-collapse: separate;
 
-  th,
-  td {
-    border-top-width: 0;
+  tbody,
+  thead {
+    td,
+    th {
+      border-top-width: 0;
+    }
   }
 
   &.is-bordered {
     border: $table-cell-border;
 
-    th,
-    td {
+    td,
+    th {
       border-left-width: 0;
 
       &:last-child {
@@ -19,32 +27,66 @@
       }
     }
 
-    tbody tr:last-child th,
-    tbody tr:last-child td {
-      border-bottom-width: 0;
+    tbody tr:last-child,
+    tfoot tr:last-child {
+      td,
+      th {
+        border-bottom-width: 0;
+      }
     }
   }
 }
 
+/*
+ * Sticky Header
+ */
+ 
 .table.has-sticky-header {
   thead th {
     @if $table-head-background-color == 'transparent' or $table-head-background-color == rgba(0, 0, 0, 0) {
       background-color: $table-background-color;
     }
-
     position: sticky;
     top: 0;
     z-index: 1;
   }
 }
 
-.table.has-sticky-column {
+.navbar.is-fixed-top ~ * .table.has-sticky-header thead th,
+.navbar.is-fixed-top ~ .table.has-sticky-header thead th {
+  top: $navbar-height;
+}
 
+/*
+ * Sticky Footer
+ */
+
+.table.has-sticky-footer {
+  tfoot th {
+    @if $table-head-background-color == 'transparent' or $table-head-background-color == rgba(0, 0, 0, 0) {
+      background-color: $table-background-color;
+    }
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+  }
+}
+
+.navbar.is-fixed-bottom ~ * .table.has-sticky-footer tfoot th,
+.navbar.is-fixed-bottom ~ .table.has-sticky-footer tfoot th {
+  bottom: $navbar-height;
+}
+
+/*
+ * Sticky Column
+ */
+
+.table.has-sticky-column {
+  tfoot th:first-child,
   thead th:first-child {
     @if $table-head-background-color == 'transparent' or $table-head-background-color == rgba(0, 0, 0, 0) {
       background-color: $table-background-color;
     }
-
     position: sticky;
     left: 0;
     z-index: 2;
@@ -54,7 +96,6 @@
     @if $table-body-background-color == 'transparent' or $table-body-background-color == rgba(0, 0, 0, 0) {
       background-color: $table-background-color;
     }
-
     position: sticky;
     left: 0;
     z-index: 1;
@@ -77,9 +118,4 @@
       background-color: $table-striped-row-even-hover-background-color;
     }
   }
-}
-
-.navbar.is-fixed-top ~ .table.has-sticky-header thead th,
-.navbar.is-fixed-top ~ * .table.has-sticky-header thead th {
-  top: $navbar-height;
 }
