@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>bulma-sticky-table</title>
+    <title>bulma-sticky-table: A Bulma-friendly way to stick a table header, table footer, first column, or all three!</title>
     <link rel="stylesheet" href="bulma-with-sticky-table.min.css">
   </head>
   <body>
@@ -25,40 +25,40 @@
       <h2 class="title">
         Example Table
       </h2>
-      <div class="message is-warning">
-        <p class="message-body">
-          Depending on the size of your screen, you may have to resize your browser window.
-        </p>
-      </div>
-      <div class="box">
-        <code class="is-block" style="background-color:transparent">
-          &lt;table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth <strong>has-sticky-header has-sticky-footer has-sticky-column</strong>"&gt;<br />
-          &lt;thead&gt;<br />
-          &lt;tr&gt;<br />
-          &nbsp;&nbsp;&lt;th&gt; Header cells must all be th &lt;/th&gt;<br />
-          &nbsp;&nbsp;&lt;th&gt; ... &lt;/th&gt;<br />
-          &nbsp;&nbsp;...<br />
-          &nbsp;&nbsp;&lt;th&gt; ... &lt;/th&gt;<br />
-          &lt;/tr&gt;<br />
-          &lt;/thead><br />
-          &lt;tbody&gt;<br />
-          &lt;tr&gt;<br />
-          &nbsp;&nbsp;&lt;th&gt; First column must be a th &lt;/th&gt;<br />
-          &nbsp;&nbsp;&lt;td&gt; ... &lt;/td&gt;<br />
-          &nbsp;&nbsp;...<br />
-          &nbsp;&nbsp;&lt;td&gt; ... &lt;/td&gt;<br />
-          &lt;/tr&gt;<br />
-          &lt;/tbody><br />
-          &lt;tfoot&gt;<br />
-          &lt;tr&gt;<br />
-          &nbsp;&nbsp;&lt;th&gt; Footer cells must all be th &lt;/th&gt;<br />
-          &nbsp;&nbsp;&lt;th&gt; ... &lt;/th&gt;<br />
-          &nbsp;&nbsp;...<br />
-          &nbsp;&nbsp;&lt;th&gt; ... &lt;/th&gt;<br />
-          &lt;/tr&gt;<br />
-          &lt;/tfoot><br />
-          &lt;/table&gt;
-        </code>
+      <div class="columns is-desktop">
+        <div class="column">
+          <div class="message is-warning">
+            <p class="message-body">
+              Depending on the size of your screen, you may have to resize your browser window.
+            </p>
+          </div>
+        </div>
+        <div class="column is-two-thirds-desktop">
+          <div class="box has-background-white-bis">
+            <code class="is-block" style="background-color:transparent">
+              &lt;table class="table <strong>has-sticky-header has-sticky-footer has-sticky-column</strong>"&gt;<br />
+              &lt;thead&gt;<br />
+              &lt;tr&gt;<br />
+                &nbsp;&nbsp;&lt;th&gt; Header cells must all be th &lt;/th&gt;<br />
+                &nbsp;&nbsp;&lt;th&gt; ... &lt;/th&gt;<br />
+              &lt;/tr&gt;<br />
+              &lt;/thead&gt;<br />
+              &lt;tbody&gt;<br />
+              &lt;tr&gt;<br />
+                &nbsp;&nbsp;&lt;th&gt; First column must be a th &lt;/th&gt;<br />
+                &nbsp;&nbsp;&lt;td&gt; ... &lt;/td&gt;<br />
+              &lt;/tr&gt;<br />
+              &lt;/tbody&gt;<br />
+              &lt;tfoot&gt;<br />
+              &lt;tr&gt;<br />
+                &nbsp;&nbsp;&lt;th&gt; Footer cells must all be th &lt;/th&gt;<br />
+                &nbsp;&nbsp;&lt;th&gt; ... &lt;/th&gt;<br />
+              &lt;/tr&gt;<br />
+              &lt;/tfoot&gt;<br />
+              &lt;/table&gt;
+            </code>
+          </div>
+        </div>
       </div>
       <div class="box">
         <h3 class="title is-4">Table Class Toggles</h3>
