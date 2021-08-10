@@ -30,6 +30,8 @@ you can replace your Bulma stylesheet with `bulma-with-sticky-tables.min.css`.
 <link rel="stylesheet" href="path/to/cityssm/bulma-sticky-table/bulma-with-sticky-table.min.css">
 ```
 
+Need a CDN?  Check out [JS Deliver](https://www.jsdelivr.com/package/npm/@cityssm/bulma-sticky-table).
+
 ## Usage
 
 Build your Bulma table as per usual, using the [Bulma Table Documentation](https://bulma.io/documentation/elements/table/) as your guide.
@@ -47,6 +49,29 @@ Use `.has-sticky-footer` to stick the footer.
 Use `.has-sticky-column` to stick the first column.
 
 -   Note that the first cells in each table row should use the `<th>` tag.
+
+### Note about `.table-container`
+
+The Bulma `.table-container` wraps around a `.table` to assist with scrolling
+around large tables.  The basic idea is that the container changes the `overflow`
+CSS rules on the container.  This can affect the `.table`'s ability to stick
+as you'd expect.
+
+While `.has-sticky-column` will likely work as expected,
+`.has-sticky-header` and `.has-sticky-footer` may not.  There are two options:
+
+1.  **Remove the `.table-container` altogether**, and just use the `.table` as is with the desired sticky classes.
+
+2.  Add some additional styles to the `.table-container` to change the vertical overflow rule and set a specific height on the container.  The example below uses the screen height.  Something smaller may be better, depending on your application.
+
+```html
+<div class="table-container" style="overflow-y:auto;max-height:100vh;">
+  <table>
+    <thead>...</thead>
+    <tbody>...</tbody>
+  </table>
+</div>
+```
 
 ## Thanks
 
