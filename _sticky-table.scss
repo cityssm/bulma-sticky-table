@@ -101,6 +101,10 @@
     z-index: 1;
   }
 
+  tbody tr.is-selected th:first-child {
+    background-color: $table-row-active-background-color;
+  }
+
   &.is-hoverable {
     tbody tr:not(.is-selected):hover th:first-child {
       background-color: $table-row-hover-background-color;
