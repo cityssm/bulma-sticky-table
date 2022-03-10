@@ -1,3 +1,5 @@
+$bulma-sticky-table-zindex: 5 !default;
+
 /*
  * Fix borders
  */
@@ -48,7 +50,7 @@
     }
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: $bulma-sticky-table-zindex;
   }
 }
 
@@ -68,7 +70,7 @@
     }
     position: sticky;
     bottom: 0;
-    z-index: 1;
+    z-index: $bulma-sticky-table-zindex;
   }
 }
 
@@ -89,7 +91,7 @@
     }
     position: sticky;
     left: 0;
-    z-index: 2;
+    z-index: $bulma-sticky-table-zindex + 1;
   }
 
   tbody th:first-child {
@@ -98,7 +100,7 @@
     }
     position: sticky;
     left: 0;
-    z-index: 1;
+    z-index: $bulma-sticky-table-zindex;
   }
 
   tbody tr.is-selected th:first-child {
