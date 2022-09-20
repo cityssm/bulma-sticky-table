@@ -27,7 +27,7 @@
     "devDependencies": {
         "@types/gulp": "^4.0.9",
         "@types/gulp-sass": "^5.0.0",
-        "bulma": "^0.9.3",
+        "bulma": "^0.9.4",
         "gulp": "^4.0.2",
         "gulp-sass": "^5.1.0",
         "sass": "^1.54.9"
