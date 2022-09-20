@@ -3,7 +3,6 @@
   "version": "2.0.0",
   "type": "module",
   "description": "A Bulma-friendly way to stick a table header, table footer, first column, or all three!",
-  "exports": "./_sticky-table.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
