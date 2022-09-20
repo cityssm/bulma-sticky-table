@@ -1,8 +1,9 @@
 {
   "name": "@cityssm/bulma-sticky-table",
-  "version": "1.4.0",
+  "version": "2.0.0",
+  "type": "module",
   "description": "A Bulma-friendly way to stick a table header, table footer, first column, or all three!",
-  "main": "_sticky-table.scss",
+  "exports": "./_sticky-table.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,6 +26,11 @@
   },
   "homepage": "https://github.com/cityssm/bulma-sticky-table#readme",
   "devDependencies": {
-    "bulma": "^0.9.3"
+    "@types/gulp": "^4.0.9",
+    "@types/gulp-sass": "^5.0.0",
+    "bulma": "^0.9.3",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.54.9"
   }
 }

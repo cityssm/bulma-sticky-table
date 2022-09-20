@@ -24,10 +24,10 @@ This will ensure your colour customizations are used.
 ```
 
 Alternatively, if you are using Bulma without any customizations,
-you can replace your Bulma stylesheet with `bulma-with-sticky-tables.min.css`.
+you can replace your Bulma stylesheet with `bulma-with-sticky-tables.css`.
 
 ```html
-<link rel="stylesheet" href="path/to/cityssm/bulma-sticky-table/bulma-with-sticky-table.min.css">
+<link rel="stylesheet" href="path/to/cityssm/bulma-sticky-table/bulma-with-sticky-table.css">
 ```
 
 Need a CDN?  Check out [JS Deliver](https://www.jsdelivr.com/package/npm/@cityssm/bulma-sticky-table).

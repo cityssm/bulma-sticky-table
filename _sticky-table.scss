@@ -1,127 +1,145 @@
 $bulma-sticky-table-zindex: 5 !default;
 
-/*
- * Fix borders
- */
+@media screen {
+  /*
+   * Fix borders
+   */
 
-.table.has-sticky-column,
-.table.has-sticky-footer,
-.table.has-sticky-header {
-  border-collapse: separate;
+  .table.has-sticky-column,
+  .table.has-sticky-footer,
+  .table.has-sticky-header {
+    border-collapse: separate;
 
-  tbody,
-  thead {
-    td,
-    th {
-      border-top-width: 0;
-    }
-  }
-
-  &.is-bordered {
-    border: $table-cell-border;
-
-    td,
-    th {
-      border-left-width: 0;
-
-      &:last-child {
-        border-right-width: 0;
-      }
-    }
-
-    tbody tr:last-child,
-    tfoot tr:last-child {
+    tbody,
+    thead {
       td,
       th {
-        border-bottom-width: 0;
+        border-top-width: 0;
+      }
+    }
+
+    &.is-bordered {
+      border: $table-cell-border;
+
+      td,
+      th {
+        border-left-width: 0;
+
+        &:last-child {
+          border-right-width: 0;
+        }
+      }
+
+      tbody tr:last-child,
+      tfoot tr:last-child {
+        td,
+        th {
+          border-bottom-width: 0;
+        }
       }
     }
   }
-}
 
-/*
- * Sticky Header
- */
+  /*
+   * Sticky Header
+   */
 
-.table.has-sticky-header {
-  thead th {
-    @if $table-head-background-color == 'transparent' or $table-head-background-color == rgba(0, 0, 0, 0) {
-      background-color: $table-background-color;
+  .table.has-sticky-header {
+    thead th {
+      @if $table-head-background-color ==
+        "transparent" or
+        $table-head-background-color ==
+        rgba(0, 0, 0, 0)
+      {
+        background-color: $table-background-color;
+      }
+      position: sticky;
+      top: 0;
+      z-index: $bulma-sticky-table-zindex;
     }
-    position: sticky;
-    top: 0;
-    z-index: $bulma-sticky-table-zindex;
   }
-}
 
-.navbar.is-fixed-top ~ * .table.has-sticky-header thead th,
-.navbar.is-fixed-top ~ .table.has-sticky-header thead th {
-  top: $navbar-height;
-}
+  .navbar.is-fixed-top ~ * .table.has-sticky-header thead th,
+  .navbar.is-fixed-top ~ .table.has-sticky-header thead th {
+    top: $navbar-height;
+  }
 
-/*
+  /*
  * Sticky Footer
  */
 
-.table.has-sticky-footer {
-  tfoot th {
-    @if $table-foot-background-color == 'transparent' or $table-foot-background-color == rgba(0, 0, 0, 0) {
-      background-color: $table-background-color;
+  .table.has-sticky-footer {
+    tfoot th {
+      @if $table-foot-background-color ==
+        "transparent" or
+        $table-foot-background-color ==
+        rgba(0, 0, 0, 0)
+      {
+        background-color: $table-background-color;
+      }
+      position: sticky;
+      bottom: 0;
+      z-index: $bulma-sticky-table-zindex;
     }
-    position: sticky;
-    bottom: 0;
-    z-index: $bulma-sticky-table-zindex;
   }
-}
 
-.navbar.is-fixed-bottom ~ * .table.has-sticky-footer tfoot th,
-.navbar.is-fixed-bottom ~ .table.has-sticky-footer tfoot th {
-  bottom: $navbar-height;
-}
+  .navbar.is-fixed-bottom ~ * .table.has-sticky-footer tfoot th,
+  .navbar.is-fixed-bottom ~ .table.has-sticky-footer tfoot th {
+    bottom: $navbar-height;
+  }
 
-/*
+  /*
  * Sticky Column
  */
 
-.table.has-sticky-column {
-  tfoot th:first-child,
-  thead th:first-child {
-    @if $table-head-background-color == 'transparent' or $table-head-background-color == rgba(0, 0, 0, 0) {
-      background-color: $table-background-color;
+  .table.has-sticky-column {
+    tfoot th:first-child,
+    thead th:first-child {
+      @if $table-head-background-color ==
+        "transparent" or
+        $table-head-background-color ==
+        rgba(0, 0, 0, 0)
+      {
+        background-color: $table-background-color;
+      }
+      position: sticky;
+      left: 0;
+      z-index: $bulma-sticky-table-zindex + 1;
     }
-    position: sticky;
-    left: 0;
-    z-index: $bulma-sticky-table-zindex + 1;
-  }
 
-  tbody th:first-child {
-    @if $table-body-background-color == 'transparent' or $table-body-background-color == rgba(0, 0, 0, 0) {
-      background-color: $table-background-color;
+    tbody th:first-child {
+      @if $table-body-background-color ==
+        "transparent" or
+        $table-body-background-color ==
+        rgba(0, 0, 0, 0)
+      {
+        background-color: $table-background-color;
+      }
+      position: sticky;
+      left: 0;
+      z-index: $bulma-sticky-table-zindex;
     }
-    position: sticky;
-    left: 0;
-    z-index: $bulma-sticky-table-zindex;
-  }
 
-  tbody tr.is-selected th:first-child {
-    background-color: $table-row-active-background-color;
-  }
-
-  &.is-hoverable {
-    tbody tr:not(.is-selected):hover th:first-child {
-      background-color: $table-row-hover-background-color;
+    tbody tr.is-selected th:first-child {
+      background-color: $table-row-active-background-color;
     }
-  }
 
-  &.is-striped {
-    tbody tr:not(.is-selected):nth-child(even) th:first-child {
-      background-color: $table-striped-row-even-background-color;
+    &.is-hoverable {
+      tbody tr:not(.is-selected):hover th:first-child {
+        background-color: $table-row-hover-background-color;
+      }
     }
-  }
 
-  &.is-striped.is-hoverable {
-    tbody tr:not(.is-selected):nth-child(even):hover th:first-child {
-      background-color: $table-striped-row-even-hover-background-color;
+    &.is-striped {
+      tbody tr:not(.is-selected):nth-child(even) th:first-child {
+        background-color: $table-striped-row-even-background-color;
+      }
+    }
+
+    &.is-striped.is-hoverable {
+      tbody tr:not(.is-selected):nth-child(even):hover th:first-child {
+        background-color: $table-striped-row-even-hover-background-color;
+      }
     }
   }
 }
