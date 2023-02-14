@@ -2,6 +2,7 @@
 
 [![npm (scoped)](https://img.shields.io/npm/v/@cityssm/bulma-sticky-table)](https://www.npmjs.com/package/@cityssm/bulma-sticky-table)
 [![Codacy grade](https://img.shields.io/codacy/grade/c7cc4f8adb274706bc57cf4f83abbc80)](https://app.codacy.com/gh/cityssm/bulma-sticky-table/dashboard)
+[![Featured on Openbase](https://badges.openbase.com/js/featured/@cityssm/bulma-sticky-table.svg?token=msrCtv4WAF4uqlOhdYTb7OahvoT48Cc1J3V8wyxek7I=)](https://openbase.com/js/@cityssm/bulma-sticky-table?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
 
 ![Screenshot](screenshot.png)
 
