@@ -63,9 +63,12 @@ as you'd expect.
 While `.has-sticky-column` will likely work as expected,
 `.has-sticky-header` and `.has-sticky-footer` may not. There are two options:
 
-1. **Remove the `.table-container` altogether**, and just use the `.table` as is with the desired sticky classes.
+1. **Remove the `.table-container` altogether**, and just use the `.table` as is with the
+   desired sticky classes.
 
-2. Add some additional styles to the `.table-container` to change the vertical overflow rule and set a specific height on the container. The example below uses the screen height. Something smaller may be better, depending on your application.
+2. Add some additional styles to the `.table-container` to change the vertical overflow rule
+   and set a specific height on the container. The example below uses the screen height.
+   Something smaller may be better, depending on your application.
 
 ```html
 <div class="table-container" style="overflow-y:auto;max-height:100vh;">
