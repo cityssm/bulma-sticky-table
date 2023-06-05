@@ -1,35 +1,35 @@
 {
-    "name": "@cityssm/bulma-sticky-table",
-    "version": "2.1.0",
-    "type": "module",
-    "description": "A Bulma-friendly way to stick a table header, table footer, first column, or all three!",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/cityssm/bulma-sticky-table.git"
-    },
-    "keywords": [
-        "bulma",
-        "sticky",
-        "table",
-        "header",
-        "footer",
-        "column"
-    ],
-    "author": "The Corporation of the City of Sault Ste. Marie",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/cityssm/bulma-sticky-table/issues"
-    },
-    "homepage": "https://github.com/cityssm/bulma-sticky-table#readme",
-    "devDependencies": {
-        "@types/gulp": "^4.0.11",
-        "@types/gulp-sass": "^5.0.1",
-        "bulma": "^0.9.4",
-        "gulp": "^4.0.2",
-        "gulp-sass": "^5.1.0",
-        "sass": "^1.62.1"
-    }
+  "name": "@cityssm/bulma-sticky-table",
+  "version": "2.1.0",
+  "type": "module",
+  "description": "A Bulma-friendly way to stick a table header, table footer, first column, or all three!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cityssm/bulma-sticky-table.git"
+  },
+  "keywords": [
+    "bulma",
+    "sticky",
+    "table",
+    "header",
+    "footer",
+    "column"
+  ],
+  "author": "The Corporation of the City of Sault Ste. Marie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cityssm/bulma-sticky-table/issues"
+  },
+  "homepage": "https://github.com/cityssm/bulma-sticky-table#readme",
+  "devDependencies": {
+    "@types/gulp": "^4.0.11",
+    "@types/gulp-sass": "^5.0.1",
+    "bulma": "^0.9.4",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1"
+  }
 }
