@@ -59,9 +59,14 @@ $bulma-sticky-table-zindex: 5 !default;
         }
     }
 
-    .navbar.is-fixed-top ~ * .table.has-sticky-header thead th,
-    .navbar.is-fixed-top ~ .table.has-sticky-header thead th {
+    .has-navbar-fixed-top * .table.has-sticky-header thead th,
+    .has-navbar-fixed-top .table.has-sticky-header thead th {
         top: $navbar-height;
+    }
+    
+    .has-navbar-fixed-top * .modal .table.has-sticky-header thead th,
+    .has-navbar-fixed-top .modal .table.has-sticky-header thead th {
+        top: 0;
     }
 
     /*
@@ -83,9 +88,14 @@ $bulma-sticky-table-zindex: 5 !default;
         }
     }
 
-    .navbar.is-fixed-bottom ~ * .table.has-sticky-footer tfoot th,
-    .navbar.is-fixed-bottom ~ .table.has-sticky-footer tfoot th {
+    .has-navbar-fixed-bottom * .table.has-sticky-footer tfoot th,
+    .has-navbar-fixed-bottom .table.has-sticky-footer tfoot th {
         bottom: $navbar-height;
+    }
+
+    .has-navbar-fixed-bottom * .modal .table.has-sticky-footer tfoot th,
+    .has-navbar-fixed-bottom .modal .table.has-sticky-footer tfoot th {
+        bottom: 0;
     }
 
     /*

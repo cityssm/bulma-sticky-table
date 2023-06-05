@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top is-clipped">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bulma-sticky-table: A Bulma-friendly way to stick a table header, table footer, first column, or all three!</title>
+    <link rel="stylesheet" href="bulma-with-sticky-table.css">
+  </head>
+  <body class="has-navbar-fixed-bottom">
+  <section class="section has-background-info-light">
+    <nav class="navbar is-light is-fixed-top is-static-print" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <strong>Navbar</strong>
+          </a>
+          <a class="navbar-burger burger is-hidden-print" role="button" aria-label="menu" aria-expanded="false" href="#" data-bulma-js-init="true">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+  
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="#">
+              <span>Menu Item</span>
+            </a>
+          </div>
+  
+          <div class="navbar-end">
+            <a class="navbar-item" id="cityssm-theme--logout-button" role="button" href="#" accesskey="x">
+              <span>Log Out</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar is-light is-fixed-bottom is-static-print" role="navigation" aria-label="main navigation">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <strong>Navbar</strong>
+          </a>
+          <a class="navbar-burger burger is-hidden-print" role="button" aria-label="menu" aria-expanded="false" href="#" data-bulma-js-init="true">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+  
+        <div class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="#">
+              <span>Menu Item</span>
+            </a>
+          </div>
+  
+          <div class="navbar-end">
+            <a class="navbar-item" id="cityssm-theme--logout-button" role="button" href="#" accesskey="x">
+              <span>Log Out</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 class="title">
+        bulma-sticky-table (Modal Test)
+      </h1>
+      <p class="subtitle">
+        A Bulma-friendly way to stick a table header, table footer, first column, or all three!
+      </p>
+      <a class="button is-link" href="https://github.com/cityssm/bulma-sticky-table">
+        Grab the SCSS from GitHub
+      </a>
+    </div>
+    <div class="modal is-active" role="dialog" aria-label="User Permissions View">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <div class="modal-card-head">
+          <h3 class="modal-card-title">Modal Test</h3>
+          <button class="delete is-close-modal-button" aria-label="close" type="button"></button>
+        </div>
+        <section class="modal-card-body p-0">
+          <table class="table is-striped is-hoverable is-fullwidth has-sticky-header has-sticky-footer has-sticky-column" id="demo-table">
+            <thead>
+              <tr>
+                <th>Letter</th>
+                <th>Score</th>
+                <th>Count</th>
+                <th>Total</th>
+                <th>Score</th>
+                <th>Count</th>
+                <th>Total</th>
+                <th>Score</th>
+                <th>Count</th>
+                <th>Total</th>
+                <th>Score</th>
+                <th>Count</th>
+                <th>Total</th>
+                <th>Score</th>
+                <th>Count</th>
+                <th>Total</th>
+                <th>Score</th>
+                <th>Count</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>A</th>
+                <td>1</td><td>1</td><td>1</td>
+                <td>1</td><td>1</td><td>1</td>
+                <td>1</td><td>1</td><td>1</td>
+                <td>1</td><td>1</td><td>1</td>
+                <td>1</td><td>1</td><td>1</td>
+                <td>1</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>B</th>
+                <td>2</td><td>1</td><td>1</td>
+                <td>2</td><td>1</td><td>1</td>
+                <td>2</td><td>1</td><td>1</td>
+                <td>2</td><td>1</td><td>1</td>
+                <td>2</td><td>1</td><td>1</td>
+                <td>2</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>C</th>
+                <td>3</td><td>1</td><td>1</td>
+                <td>3</td><td>1</td><td>1</td>
+                <td>3</td><td>1</td><td>1</td>
+                <td>3</td><td>1</td><td>1</td>
+                <td>3</td><td>1</td><td>1</td>
+                <td>3</td><td>1</td><td>1</td>
+              </tr>
+              <tr class="is-selected">
+                <th>D</th>
+                <td>4</td><td>1</td><td>1</td>
+                <td>4</td><td>1</td><td>1</td>
+                <td>4</td><td>1</td><td>1</td>
+                <td>4</td><td>1</td><td>1</td>
+                <td>4</td><td>1</td><td>1</td>
+                <td>4</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>E</th>
+                <td>5</td><td>1</td><td>1</td>
+                <td>5</td><td>1</td><td>1</td>
+                <td>5</td><td>1</td><td>1</td>
+                <td>5</td><td>1</td><td>1</td>
+                <td>5</td><td>1</td><td>1</td>
+                <td>5</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>F</th>
+                <td>6</td><td>1</td><td>1</td>
+                <td>6</td><td>1</td><td>1</td>
+                <td>6</td><td>1</td><td>1</td>
+                <td>6</td><td>1</td><td>1</td>
+                <td>6</td><td>1</td><td>1</td>
+                <td>6</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>G</th>
+                <td>7</td><td>1</td><td>1</td>
+                <td>7</td><td>1</td><td>1</td>
+                <td>7</td><td>1</td><td>1</td>
+                <td>7</td><td>1</td><td>1</td>
+                <td>7</td><td>1</td><td>1</td>
+                <td>7</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>H</th>
+                <td>8</td><td>1</td><td>1</td>
+                <td>8</td><td>1</td><td>1</td>
+                <td>8</td><td>1</td><td>1</td>
+                <td>8</td><td>1</td><td>1</td>
+                <td>8</td><td>1</td><td>1</td>
+                <td>8</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>I</th>
+                <td>9</td><td>1</td><td>1</td>
+                <td>9</td><td>1</td><td>1</td>
+                <td>9</td><td>1</td><td>1</td>
+                <td>9</td><td>1</td><td>1</td>
+                <td>9</td><td>1</td><td>1</td>
+                <td>9</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>J</th>
+                <td>10</td><td>1</td><td>1</td>
+                <td>10</td><td>1</td><td>1</td>
+                <td>10</td><td>1</td><td>1</td>
+                <td>10</td><td>1</td><td>1</td>
+                <td>10</td><td>1</td><td>1</td>
+                <td>10</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>K</th>
+                <td>11</td><td>1</td><td>1</td>
+                <td>11</td><td>1</td><td>1</td>
+                <td>11</td><td>1</td><td>1</td>
+                <td>11</td><td>1</td><td>1</td>
+                <td>11</td><td>1</td><td>1</td>
+                <td>11</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>L</th>
+                <td>12</td><td>1</td><td>1</td>
+                <td>12</td><td>1</td><td>1</td>
+                <td>12</td><td>1</td><td>1</td>
+                <td>12</td><td>1</td><td>1</td>
+                <td>12</td><td>1</td><td>1</td>
+                <td>12</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>M</th>
+                <td>13</td><td>1</td><td>1</td>
+                <td>13</td><td>1</td><td>1</td>
+                <td>13</td><td>1</td><td>1</td>
+                <td>13</td><td>1</td><td>1</td>
+                <td>13</td><td>1</td><td>1</td>
+                <td>13</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>N</th>
+                <td>14</td><td>1</td><td>1</td>
+                <td>14</td><td>1</td><td>1</td>
+                <td>14</td><td>1</td><td>1</td>
+                <td>14</td><td>1</td><td>1</td>
+                <td>14</td><td>1</td><td>1</td>
+                <td>14</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>O</th>
+                <td>15</td><td>1</td><td>1</td>
+                <td>15</td><td>1</td><td>1</td>
+                <td>15</td><td>1</td><td>1</td>
+                <td>15</td><td>1</td><td>1</td>
+                <td>15</td><td>1</td><td>1</td>
+                <td>15</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>P</th>
+                <td>16</td><td>1</td><td>1</td>
+                <td>16</td><td>1</td><td>1</td>
+                <td>16</td><td>1</td><td>1</td>
+                <td>16</td><td>1</td><td>1</td>
+                <td>16</td><td>1</td><td>1</td>
+                <td>16</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>Q</th>
+                <td>17</td><td>1</td><td>1</td>
+                <td>17</td><td>1</td><td>1</td>
+                <td>17</td><td>1</td><td>1</td>
+                <td>17</td><td>1</td><td>1</td>
+                <td>17</td><td>1</td><td>1</td>
+                <td>17</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>R</th>
+                <td>18</td><td>1</td><td>1</td>
+                <td>18</td><td>1</td><td>1</td>
+                <td>18</td><td>1</td><td>1</td>
+                <td>18</td><td>1</td><td>1</td>
+                <td>18</td><td>1</td><td>1</td>
+                <td>18</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>S</th>
+                <td>19</td><td>1</td><td>1</td>
+                <td>19</td><td>1</td><td>1</td>
+                <td>19</td><td>1</td><td>1</td>
+                <td>19</td><td>1</td><td>1</td>
+                <td>19</td><td>1</td><td>1</td>
+                <td>19</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>T</th>
+                <td>20</td><td>1</td><td>1</td>
+                <td>20</td><td>1</td><td>1</td>
+                <td>20</td><td>1</td><td>1</td>
+                <td>20</td><td>1</td><td>1</td>
+                <td>20</td><td>1</td><td>1</td>
+                <td>20</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>U</th>
+                <td>21</td><td>1</td><td>1</td>
+                <td>21</td><td>1</td><td>1</td>
+                <td>21</td><td>1</td><td>1</td>
+                <td>21</td><td>1</td><td>1</td>
+                <td>21</td><td>1</td><td>1</td>
+                <td>21</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>V</th>
+                <td>22</td><td>1</td><td>1</td>
+                <td>22</td><td>1</td><td>1</td>
+                <td>22</td><td>1</td><td>1</td>
+                <td>22</td><td>1</td><td>1</td>
+                <td>22</td><td>1</td><td>1</td>
+                <td>22</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>W</th>
+                <td>23</td><td>1</td><td>1</td>
+                <td>23</td><td>1</td><td>1</td>
+                <td>23</td><td>1</td><td>1</td>
+                <td>23</td><td>1</td><td>1</td>
+                <td>23</td><td>1</td><td>1</td>
+                <td>23</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>X</th>
+                <td>24</td><td>1</td><td>1</td>
+                <td>24</td><td>1</td><td>1</td>
+                <td>24</td><td>1</td><td>1</td>
+                <td>24</td><td>1</td><td>1</td>
+                <td>24</td><td>1</td><td>1</td>
+                <td>24</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>Y</th>
+                <td>25</td><td>1</td><td>1</td>
+                <td>25</td><td>1</td><td>1</td>
+                <td>25</td><td>1</td><td>1</td>
+                <td>25</td><td>1</td><td>1</td>
+                <td>25</td><td>1</td><td>1</td>
+                <td>25</td><td>1</td><td>1</td>
+              </tr>
+              <tr>
+                <th>Z</th>
+                <td>26</td><td>1</td><td>1</td>
+                <td>26</td><td>1</td><td>1</td>
+                <td>26</td><td>1</td><td>1</td>
+                <td>26</td><td>1</td><td>1</td>
+                <td>26</td><td>1</td><td>1</td>
+                <td>26</td><td>1</td><td>1</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>Letter</th>
+                <th>Score</th>
+                <th>Count</th>
+                <th>Total</th>
+                <th>Score</th>
+                <th>Count</th>
+                <th>Total</th>
+                <th>Score</th>
+                <th>Count</th>
+                <th>Total</th>
+                <th>Score</th>
+                <th>Count</th>
+                <th>Total</th>
+                <th>Score</th>
+                <th>Count</th>
+                <th>Total</th>
+                <th>Score</th>
+                <th>Count</th>
+                <th>Total</th>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+        <div class="modal-card-foot is-justify-content-end">
+          <button class="button is-close-modal-button" type="button">Close</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="section has-background-info-light">
+    <div class="container has-text-right">
+      Another open source project by
+      <a href="https://saultstemarie.ca/">The City of Sault Ste. Marie</a>
+    </div>
+  </footer>
+  </body>
+</html>

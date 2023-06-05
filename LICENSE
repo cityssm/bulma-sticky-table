@@ -1,6 +1,6 @@
-MIT License
+# MIT License
 
-Copyright (c) 2021 The Corporation of the City of Sault Ste. Marie
+Copyright (c) 2023 The Corporation of the City of Sault Ste. Marie
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

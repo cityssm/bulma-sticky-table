@@ -11,4 +11,5 @@ gulpfile.*
 tsconfig.json
 
 index.html
+modal.html
 screenshot.png
