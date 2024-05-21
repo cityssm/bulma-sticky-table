@@ -1,9 +1,35 @@
+@use "node_modules/bulma/sass/utilities/css-variables.scss" as cv;
+
 $bulma-sticky-table-zindex: 5 !default;
+
+/*
+ * Bulma variables
+ */
+
+$table-background-color: cv.getVar("scheme-main") !default;
+
+$table-cell-border-color: cv.getVar("border") !default;
+$table-cell-border-style: solid !default;
+$table-cell-border-width: 0 0 1px !default;
+
+$table-head-background-color: transparent !default;
+$table-body-background-color: transparent !default;
+$table-foot-background-color: transparent !default;
+
+$table-row-hover-background-color: cv.getVar("scheme-main-bis") !default;
+$table-row-active-background-color: cv.getVar("primary") !default;
+
+$table-striped-row-even-background-color: cv.getVar("scheme-main-bis") !default;
+$table-striped-row-even-hover-background-color: cv.getVar(
+  "scheme-main-ter"
+) !default;
+
+$navbar-height: 3.25rem !default;
 
 @media screen {
   /*
-     * Fix borders
-     */
+   * Fix borders
+   */
 
   .table.has-sticky-column,
   .table.has-sticky-footer,
@@ -19,7 +45,9 @@ $bulma-sticky-table-zindex: 5 !default;
     }
 
     &.is-bordered {
-      border: $table-cell-border;
+      border-color: $table-cell-border-color;
+      border-style: $table-cell-border-style;
+      border-width: $table-cell-border-width;
 
       td,
       th {
