@@ -13,7 +13,17 @@ A Bulma-friendly way to stick a table header, table footer, first column, or all
 
 Download a release, or grab the code from npm.
 
-`npm install @cityssm/bulma-sticky-table`
+### Bulma v1 or newer
+
+```sh
+npm install @cityssm/bulma-sticky-table
+```
+
+### Bulma v0.9.4 or older
+
+```sh
+npm install @cityssm/bulma-sticky-table@2.x
+```
 
 When building your stylesheet, import `_sticky-table.scss` AFTER you import Bulma.
 This will ensure your colour customizations are used.
