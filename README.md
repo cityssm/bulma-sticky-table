@@ -25,6 +25,8 @@ npm install @cityssm/bulma-sticky-table
 npm install @cityssm/bulma-sticky-table@2.x
 ```
 
+## Usage
+
 When building your stylesheet, import `_sticky-table.scss` AFTER you import Bulma.
 This will ensure your colour customizations are used.
 
@@ -44,8 +46,6 @@ you can replace your Bulma stylesheet with `bulma-with-sticky-tables.css`.
 ```
 
 Need a CDN? Check out [JS Deliver](https://www.jsdelivr.com/package/npm/@cityssm/bulma-sticky-table).
-
-## Usage
 
 Build your Bulma table as per usual, using the [Bulma Table Documentation](https://bulma.io/documentation/elements/table/) as your guide.
 
