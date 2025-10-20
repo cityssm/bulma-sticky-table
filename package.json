@@ -26,7 +26,7 @@
   "homepage": "https://github.com/cityssm/bulma-sticky-table#readme",
   "devDependencies": {
     "@types/gulp": "^4.0.17",
-    "@types/gulp-sass": "^5.0.4",
+    "@types/gulp-sass": "^6.0.0",
     "bulma": "^1.0.3",
     "gulp": "^5.0.0",
     "gulp-sass": "^6.0.1",
